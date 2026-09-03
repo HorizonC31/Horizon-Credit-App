@@ -1,0 +1,412 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8"><meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+>
+
+<meta name="theme-color" content="#b00020">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta
+    name="description"
+    content="Horizon Credit secure digital banking demo"
+>
+
+<title>Horizon Credit — Secure Banking</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><main class="login-screen">
+
+    <!-- Decorative background elements -->
+    <div class="login-orb login-orb-one"></div>
+    <div class="login-orb login-orb-two"></div>
+
+
+    <!-- ================================
+         BRANDING
+    ================================= -->
+
+    <header class="brand-section">
+
+        <div class="logo-mark" aria-label="Horizon Credit logo">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <div class="brand-name">
+            <h1>HORIZON CREDIT</h1>
+            <span>Banking made simpler.</span>
+        </div>
+
+    </header>
+
+
+    <!-- ================================
+         LOGIN CARD
+    ================================= -->
+
+    <section class="login-panel">
+
+        <div class="login-heading">
+
+            <div class="welcome-badge">
+                <span class="welcome-dot"></span>
+                Secure banking
+            </div>
+
+            <h2>Welcome back</h2>
+
+            <p class="subtitle">
+                Sign in to securely access your Horizon Credit account.
+            </p>
+
+        </div>
+
+
+        <!-- Login form -->
+        <form id="loginForm" novalidate>
+
+            <!-- Email -->
+            <div class="input-box">
+
+                <div class="input-icon" aria-hidden="true">
+                    ✉
+                </div>
+
+                <div class="input-content">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="username"
+                        inputmode="email"
+                        autocapitalize="none"
+                        spellcheck="false"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Password -->
+            <div class="input-box">
+
+                <div class="input-icon" aria-hidden="true">
+                    ⌑
+                </div>
+
+                <div class="input-content">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+                <button
+                    type="button"
+                    class="eye-button"
+                    id="togglePassword"
+                    aria-label="Show password"
+                    aria-pressed="false"
+                >
+                    ◉
+                </button>
+
+            </div>
+
+
+            <!-- Login options -->
+            <div class="login-options">
+
+                <label class="remember">
+
+                    <input
+                        type="checkbox"
+                        id="remember"
+                        name="remember"
+                    >
+
+                    <span class="remember-box"></span>
+
+                    <span>
+                        Remember me
+                    </span>
+
+                </label>
+
+
+                <button
+                    type="button"
+                    class="forgot"
+                    id="forgotPassword"
+                >
+                    Forgot password?
+                </button>
+
+            </div>
+
+
+            <!-- Login error -->
+            <div
+                id="loginError"
+                class="login-error"
+                role="alert"
+                aria-live="polite"
+            >
+                <span class="error-icon">!</span>
+
+                <span>
+                    Incorrect email or password.
+                </span>
+            </div>
+
+
+            <!-- Sign in -->
+            <button
+                type="submit"
+                class="signin-button"
+            >
+
+                <span class="signin-text">
+                    Sign In
+                </span>
+
+                <span
+                    class="signin-arrow"
+                    aria-hidden="true"
+                >
+                    →
+                </span>
+
+            </button>
+
+        </form>
+
+
+        <!-- ================================
+             BIOMETRIC LOGIN
+        ================================= -->
+
+        <div class="or-divider">
+
+            <span></span>
+
+            <b>OR</b>
+
+            <span></span>
+
+        </div>
+
+
+        <button
+            class="face-id"
+            id="faceIdButton"
+            type="button"
+        >
+
+            <div class="face-icon">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <div class="face-text">
+
+                <strong>Sign in with Face ID</strong>
+
+                <small>
+                    Fast and secure access
+                </small>
+
+            </div>
+
+            <span class="face-arrow">
+                →
+            </span>
+
+        </button>
+
+
+        <!-- ================================
+             SECURITY FEATURES
+        ================================= -->
+
+        <div class="security-row">
+
+            <div class="security-item">
+
+                <div class="security-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <strong>Secure</strong>
+                    <span>Protected access</span>
+                </div>
+
+            </div>
+
+
+            <div class="security-item">
+
+                <div class="security-icon">
+                    ◇
+                </div>
+
+                <div>
+                    <strong>Private</strong>
+                    <span>Your information</span>
+                </div>
+
+            </div>
+
+
+            <div class="security-item">
+
+                <div class="security-icon">
+                    ♙
+                </div>
+
+                <div>
+                    <strong>Protected</strong>
+                    <span>24/7 monitoring</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+        <div class="footer-links">
+
+            <button type="button" id="enrollButton">
+                Enroll now
+            </button>
+
+            <span aria-hidden="true">•</span>
+
+            <button type="button" id="contactButton">
+                Contact Us
+            </button>
+
+            <span aria-hidden="true">•</span>
+
+            <button type="button" id="locationsButton">
+                Locations
+            </button>
+
+        </div>
+
+        <div class="footer-security">
+
+            <span class="footer-lock">♙</span>
+
+            <span>
+                Horizon Credit Secure Banking
+            </span>
+
+        </div>
+
+        <p>
+            © 2026 Horizon Credit. All rights reserved.
+        </p>
+
+    </footer>
+
+</main>
+
+
+<!-- ================================
+     LOGIN PAGE POPUP
+================================= -->
+
+<div
+    class="popup-overlay"
+    id="loginPopup"
+    aria-hidden="true"
+>
+
+    <div
+        class="popup-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="loginPopupTitle"
+    >
+
+        <button
+            type="button"
+            class="popup-close"
+            id="loginPopupClose"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+        <div
+            class="popup-icon"
+            id="loginPopupIcon"
+        >
+            ✓
+        </div>
+
+        <h3 id="loginPopupTitle">
+            Horizon Credit
+        </h3>
+
+        <p id="loginPopupMessage">
+            This feature is available in the Horizon Credit demo.
+        </p>
+
+        <button
+            type="button"
+            class="popup-button"
+            id="loginPopupDone"
+        >
+            Continue
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

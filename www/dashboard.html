@@ -1,0 +1,1444 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8"><meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+>
+
+<meta name="theme-color" content="#b00020">
+
+<meta
+    name="description"
+    content="Horizon Credit secure banking dashboard demo"
+>
+
+<title>Horizon Credit — Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><main class="dashboard-screen"><!-- =========================================
+     HEADER
+========================================== -->
+
+<header class="dashboard-header">
+
+    <button
+        class="header-button menu-button"
+        id="menuButton"
+        aria-label="Open menu"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+    <div class="header-brand">
+
+        <div class="mini-logo">
+            HC
+        </div>
+
+        <div class="header-brand-text">
+            <strong>HORIZON</strong>
+            <span>CREDIT</span>
+        </div>
+
+    </div>
+
+
+    <button
+        class="header-button notification-button"
+        id="notificationButton"
+        aria-label="Notifications"
+    >
+
+        <span class="bell-icon">♧</span>
+
+        <span class="notification-badge">
+            3
+        </span>
+
+    </button>
+
+</header>
+
+
+<!-- =========================================
+     DASHBOARD CONTENT
+========================================== -->
+
+<div class="dashboard-content">
+
+
+    <!-- WELCOME -->
+    <section class="welcome-section">
+
+        <div class="welcome-topline">
+
+            <div>
+
+                <p
+                    class="welcome-label"
+                    id="greeting"
+                >
+                    Good morning,
+                </p>
+
+                <h1>
+                    Shauna
+                </h1>
+
+            </div>
+
+            <div class="profile-avatar">
+                P
+            </div>
+
+        </div>
+
+
+        <div class="member-status">
+
+            <span class="status-dot"></span>
+
+            Preferred Rewards Member
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         BALANCE CARD
+    ========================================== -->
+
+    <section class="balance-card">
+
+        <div class="balance-pattern"></div>
+
+        <div class="balance-top">
+
+            <div>
+
+                <span class="account-label">
+                    PERSONAL CHECKING
+                </span>
+
+                <span class="account-number">
+                    •••• 4587
+                </span>
+
+            </div>
+
+            <div class="visa-mini">
+                VISA
+            </div>
+
+        </div>
+
+
+        <div class="balance-main">
+
+            <span class="balance-caption">
+                Available Balance
+            </span>
+
+            <h2>
+                $875,742.63
+            </h2>
+
+        </div>
+
+
+        <div class="balance-bottom">
+
+            <div>
+
+                <span>
+                    Posted Balance
+                </span>
+
+                <strong>
+                    $8,842.63
+                </strong>
+
+            </div>
+
+            <div>
+
+                <span>
+                    Account
+                </span>
+
+                <strong>
+                    Checking
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         QUICK ACTIONS
+    ========================================== -->
+
+    <section class="dashboard-section">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-kicker">
+                    BANKING
+                </span>
+
+                <h2>
+                    Quick Actions
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="quick-actions">
+
+            <button
+                class="quick-action"
+                data-action="Transfer"
+            >
+
+                <span class="action-icon transfer-icon">
+                    ↗
+                </span>
+
+                <span>
+                    Transfer
+                </span>
+
+            </button>
+
+
+            <button
+                class="quick-action"
+                data-action="Pay Bills"
+            >
+
+                <span class="action-icon bill-icon">
+                    ▣
+                </span>
+
+                <span>
+                    Pay Bills
+                </span>
+
+            </button>
+
+
+            <button
+                class="quick-action"
+                data-action="Deposit"
+            >
+
+                <span class="action-icon deposit-action-icon">
+                    ↓
+                </span>
+
+                <span>
+                    Deposit
+                </span>
+
+            </button>
+
+
+            <button
+                class="quick-action"
+                data-action="More"
+            >
+
+                <span class="action-icon more-icon">
+                    •••
+                </span>
+
+                <span>
+                    More
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         ACCOUNTS
+    ========================================== -->
+
+    <section class="dashboard-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-kicker">
+                    OVERVIEW
+                </span>
+
+                <h2>
+                    My Accounts
+                </h2>
+
+            </div>
+
+            <button
+                class="view-all"
+                data-action="All Accounts"
+            >
+                View All
+            </button>
+
+        </div>
+
+
+        <div class="account-list">
+
+
+            <!-- CHECKING -->
+
+            <button
+                class="account-row"
+                data-account="checking"
+            >
+
+                <div class="account-icon checking-icon">
+                    $
+                </div>
+
+                <div class="account-info">
+
+                    <strong>
+                        Personal Checking
+                    </strong>
+
+                    <span>
+                        Available •••• 4587
+                    </span>
+
+                </div>
+
+                <div class="account-balance">
+                    $8,742.63
+                </div>
+
+                <span class="row-arrow">
+                    ›
+                </span>
+
+            </button>
+
+
+            <!-- SAVINGS -->
+
+            <button
+                class="account-row"
+                data-account="savings"
+            >
+
+                <div class="account-icon savings-icon">
+                    $
+                </div>
+
+                <div class="account-info">
+
+                    <strong>
+                        Regular Savings
+                    </strong>
+
+                    <span>
+                        Savings •••• 1234
+                    </span>
+
+                </div>
+
+                <div class="account-balance">
+                    $15,203.21
+                </div>
+
+                <span class="row-arrow">
+                    ›
+                </span>
+
+            </button>
+
+
+            <!-- CARD -->
+
+            <button
+                class="account-row card-account-row"
+                data-account="card"
+            >
+
+                <div class="account-icon card-icon">
+                    ▣
+                </div>
+
+                <div class="account-info">
+
+                    <strong>
+                        Horizon Credit Card
+                    </strong>
+
+                    <span>
+                        Visa •••• 9012
+                    </span>
+
+                </div>
+
+                <div class="account-balance">
+                    $2,345.67
+                </div>
+
+                <span class="row-arrow">
+                    ›
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         RECENT TRANSACTIONS
+    ========================================== -->
+
+    <section class="dashboard-section transactions-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-kicker">
+                    ACTIVITY
+                </span>
+
+                <h2>
+                    Recent Transactions
+                </h2>
+
+            </div>
+
+            <button
+                class="view-all"
+                data-action="All Transactions"
+            >
+                View All
+            </button>
+
+        </div>
+
+
+        <div class="transaction-list">
+
+
+            <button class="transaction-row">
+
+                <div class="transaction-icon grocery">
+                    🛒
+                </div>
+
+                <div class="transaction-info">
+
+                    <strong>
+                        Whole Foods Market
+                    </strong>
+
+                    <span>
+                        Today • Grocery
+                    </span>
+
+                </div>
+
+                <span class="transaction-amount debit">
+                    -$86.24
+                </span>
+
+            </button>
+
+
+            <button class="transaction-row">
+
+                <div class="transaction-icon coffee">
+                    ☕
+                </div>
+
+                <div class="transaction-info">
+
+                    <strong>
+                        Coffee Shop
+                    </strong>
+
+                    <span>
+                        Today • Food & Drink
+                    </span>
+
+                </div>
+
+                <span class="transaction-amount debit">
+                    -$5.45
+                </span>
+
+            </button>
+
+
+            <button class="transaction-row">
+
+                <div class="transaction-icon deposit">
+                    ↓
+                </div>
+
+                <div class="transaction-info">
+
+                    <strong>
+                        Direct Deposit
+                    </strong>
+
+                    <span>
+                        Yesterday • Income
+                    </span>
+
+                </div>
+
+                <span class="transaction-amount credit">
+                    +$870,350.00
+                </span>
+
+            </button>
+
+
+            <button class="transaction-row">
+
+                <div class="transaction-icon gas">
+                    ⛽
+                </div>
+
+                <div class="transaction-info">
+
+                    <strong>
+                        Gas Station
+                    </strong>
+
+                    <span>
+                        Yesterday • Transportation
+                    </span>
+
+                </div>
+
+                <span class="transaction-amount debit">
+                    -$45.00
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- DEMO NOTICE -->
+
+    <div class="demo-notice">
+
+        <span class="demo-notice-icon">
+            i
+        </span>
+
+        <div>
+
+            <strong>
+                Horizon Credit Balance
+            </strong>
+
+            <p>
+                Account balances and transactions shown here are for beneficiary only .
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     BOTTOM NAVIGATION
+========================================== -->
+
+<nav class="bottom-nav">
+
+    <button
+        class="nav-item active"
+        data-nav="Accounts"
+    >
+
+        <span class="nav-icon">
+            ⌂
+        </span>
+
+        <span>
+            Accounts
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        data-nav="Transfer"
+    >
+
+        <span class="nav-icon">
+            ↗
+        </span>
+
+        <span>
+            Transfer
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        data-nav="Pay & Bill"
+    >
+
+        <span class="nav-icon">
+            ▣
+        </span>
+
+        <span>
+            Pay & Bill
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        data-nav="Deposit"
+    >
+
+        <span class="nav-icon">
+            ↓
+        </span>
+
+        <span>
+            Deposit
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        data-nav="Menu"
+    >
+
+        <span class="nav-icon">
+            ☰
+        </span>
+
+        <span>
+            Menu
+        </span>
+
+    </button>
+
+</nav>
+
+</main><!-- =========================================
+     GENERAL POPUP
+========================================== --><div
+    class="popup-overlay"
+    id="popupOverlay"
+    aria-hidden="true"
+><div
+    class="popup-card"
+    role="dialog"
+    aria-modal="true"
+>
+
+    <button
+        class="popup-close"
+        id="popupClose"
+        aria-label="Close"
+    >
+        ×
+    </button>
+
+    <div
+        class="popup-icon"
+        id="popupIcon"
+    >
+        ✓
+    </div>
+
+    <h3 id="popupTitle">
+        Horizon Credit
+    </h3>
+
+    <p id="popupMessage">
+        This feature is available in the demo.
+    </p>
+
+    <button
+        class="popup-button"
+        id="popupDone"
+    >
+        Done
+    </button>
+
+</div>
+
+</div><!-- =========================================
+     CARD DETAILS
+========================================== --><div
+    class="card-modal-overlay"
+    id="cardModal"
+><div class="card-modal">
+
+
+    <button
+        class="card-modal-close"
+        id="cardModalClose"
+        aria-label="Close card details"
+    >
+        ×
+    </button>
+
+
+    <div class="card-modal-header">
+
+        <div>
+
+            <span class="modal-kicker">
+                HORIZON CREDIT
+            </span>
+
+            <strong>
+                Card Details
+            </strong>
+
+        </div>
+
+        <span class="active-label">
+            ACTIVE
+        </span>
+
+    </div>
+
+
+    <!-- VIRTUAL CARD -->
+
+    <div class="virtual-card">
+
+        <div class="virtual-card-glow"></div>
+
+        <div class="virtual-card-top">
+
+            <div class="virtual-bank">
+
+                HORIZON
+
+                <small>
+                    CREDIT
+                </small>
+
+            </div>
+
+            <div class="visa-mark">
+                VISA
+            </div>
+
+        </div>
+
+
+        <div class="chip">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+
+        <div
+            class="card-number"
+            id="cardNumber"
+        >
+            4587 1234 5678 9012
+        </div>
+
+
+        <div class="card-bottom">
+
+            <div>
+
+                <small>
+                    CARDHOLDER
+                </small>
+
+                <strong>
+                    SHAUNA SIMS
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    EXPIRES
+                </small>
+
+                <strong>
+                    12/30
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CARD INFORMATION -->
+
+    <div class="card-details-list">
+
+
+        <div class="detail-item">
+
+            <div>
+
+                <span>
+                    Card Number
+                </span>
+
+                <strong id="maskedNumber">
+                    •••• •••• •••• 9012
+                </strong>
+
+            </div>
+
+            <button id="toggleCardNumber">
+                Show
+            </button>
+
+        </div>
+
+
+        <div class="detail-item">
+
+            <div>
+
+                <span>
+                    Expiration Date
+                </span>
+
+                <strong>
+                    12/30
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="detail-item">
+
+            <div>
+
+                <span>
+                    Security Code
+                </span>
+
+                <strong id="cvvNumber">
+                    •••
+                </strong>
+
+            </div>
+
+            <button id="toggleCVV">
+                Show
+            </button>
+
+        </div>
+
+
+        <div class="detail-item">
+
+            <div>
+
+                <span>
+                    Card Type
+                </span>
+
+                <strong>
+                    Visa Debit
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="card-security-note">
+
+        <span>
+            🔒
+        </span>
+
+        <div>
+
+            <strong>
+                Keep your card secure
+            </strong>
+
+            <p>
+                Never share your card number, expiration date or security code with anyone.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="card-action-button"
+        id="cardActionButton"
+    >
+        Manage Card
+        <span>→</span>
+    </button>
+
+</div>
+
+</div><script>
+
+    /* =========================================
+       GREETING
+    ========================================== */
+
+    function updateGreeting() {
+
+        const hour = new Date().getHours();
+
+        const greeting =
+            document.getElementById("greeting");
+
+        if (hour >= 5 && hour < 12) {
+
+            greeting.textContent =
+                "Good morning,";
+
+        } else if (hour >= 12 && hour < 17) {
+
+            greeting.textContent =
+                "Good afternoon,";
+
+        } else if (hour >= 17 && hour < 24) {
+
+            greeting.textContent =
+                "Good evening,";
+
+        } else {
+
+            greeting.textContent =
+                "Good night,";
+
+        }
+
+    }
+
+    updateGreeting();
+
+    setInterval(updateGreeting, 60000);
+
+
+    /* =========================================
+       GENERAL POPUP
+    ========================================== */
+
+    const popupOverlay =
+        document.getElementById("popupOverlay");
+
+    const popupClose =
+        document.getElementById("popupClose");
+
+    const popupDone =
+        document.getElementById("popupDone");
+
+    const popupTitle =
+        document.getElementById("popupTitle");
+
+    const popupMessage =
+        document.getElementById("popupMessage");
+
+    const popupIcon =
+        document.getElementById("popupIcon");
+
+
+    function showPopup(
+        title,
+        message,
+        icon = "✓"
+    ) {
+
+        popupTitle.textContent = title;
+
+        popupMessage.textContent = message;
+
+        popupIcon.textContent = icon;
+
+        popupOverlay.classList.add("show");
+
+        popupOverlay.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+    }
+
+
+    function closePopup() {
+
+        popupOverlay.classList.remove("show");
+
+        popupOverlay.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+    }
+
+
+    popupClose.addEventListener(
+        "click",
+        closePopup
+    );
+
+    popupDone.addEventListener(
+        "click",
+        closePopup
+    );
+
+
+    popupOverlay.addEventListener(
+        "click",
+        function(event) {
+
+            if (
+                event.target === popupOverlay
+            ) {
+                closePopup();
+            }
+
+        }
+    );
+
+
+    /* =========================================
+       QUICK ACTIONS
+    ========================================== */
+
+    document
+        .querySelectorAll("[data-action]")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                function() {
+
+                    const action =
+                        this.dataset.action;
+
+
+                    if (action === "More") {
+
+                        showPopup(
+                            "More Features",
+                            "Additional Horizon Credit banking services will appear here.",
+                            "＋"
+                        );
+
+                    } else if (
+                        action === "Transfer"
+                    ) {
+
+                        showPopup(
+                            "Transfer Money",
+                            "The transfer feature is available in the Horizon Credit demo.",
+                            "↗"
+                        );
+
+                    } else if (
+                        action === "Pay Bills"
+                    ) {
+
+                        showPopup(
+                            "Pay Bills",
+                            "Bill payment services are available in the demo.",
+                            "▣"
+                        );
+
+                    } else if (
+                        action === "Deposit"
+                    ) {
+
+                        showPopup(
+                            "Deposit",
+                            "Mobile deposit is available in the Horizon Credit demo.",
+                            "↓"
+                        );
+
+                    } else if (
+                        action === "All Accounts"
+                    ) {
+
+                        showPopup(
+                            "My Accounts",
+                            "You are viewing all available Horizon Credit demo accounts.",
+                            "$"
+                        );
+
+                    } else if (
+                        action === "All Transactions"
+                    ) {
+
+                        showPopup(
+                            "Transactions",
+                            "Your complete transaction history will appear here.",
+                            "≡"
+                        );
+
+                    }
+
+                }
+            );
+
+        });
+
+
+    /* =========================================
+       ACCOUNTS
+    ========================================== */
+
+    document
+        .querySelectorAll("[data-account]")
+        .forEach(row => {
+
+            row.addEventListener(
+                "click",
+                function() {
+
+                    const account =
+                        this.dataset.account;
+
+
+                    if (account === "card") {
+
+                        openCardDetails();
+
+                    } else if (
+                        account === "checking"
+                    ) {
+
+                        showPopup(
+                            "Personal Checking",
+                            "Available Balance: $8,742.63",
+                            "$"
+                        );
+
+                    } else if (
+                        account === "savings"
+                    ) {
+
+                        showPopup(
+                            "Regular Savings",
+                            "Available Balance: $15,203.21",
+                            "$"
+                        );
+
+                    }
+
+                }
+            );
+
+        });
+
+
+    /* =========================================
+       CARD MODAL
+    ========================================== */
+
+    const cardModal =
+        document.getElementById("cardModal");
+
+    const cardModalClose =
+        document.getElementById("cardModalClose");
+
+    const maskedNumber =
+        document.getElementById("maskedNumber");
+
+    const cardNumber =
+        document.getElementById("cardNumber");
+
+    const toggleCardNumber =
+        document.getElementById(
+            "toggleCardNumber"
+        );
+
+    const cvvNumber =
+        document.getElementById("cvvNumber");
+
+    const toggleCVV =
+        document.getElementById("toggleCVV");
+
+
+    let cardNumberVisible = false;
+    let cvvVisible = false;
+
+
+    function openCardDetails() {
+
+        cardModal.classList.add("show");
+
+        document.body.style.overflow =
+            "hidden";
+
+    }
+
+
+    function closeCardDetails() {
+
+        cardModal.classList.remove("show");
+
+        document.body.style.overflow =
+            "";
+
+    }
+
+
+    cardModalClose.addEventListener(
+        "click",
+        closeCardDetails
+    );
+
+
+    cardModal.addEventListener(
+        "click",
+        function(event) {
+
+            if (
+                event.target === cardModal
+            ) {
+                closeCardDetails();
+            }
+
+        }
+    );
+
+
+    toggleCardNumber.addEventListener(
+        "click",
+        function() {
+
+            cardNumberVisible =
+                !cardNumberVisible;
+
+
+            if (cardNumberVisible) {
+
+                maskedNumber.textContent =
+                    "4587 1234 5678 9012";
+
+                toggleCardNumber.textContent =
+                    "Hide";
+
+            } else {
+
+                maskedNumber.textContent =
+                    "•••• •••• •••• 9012";
+
+                toggleCardNumber.textContent =
+                    "Show";
+
+            }
+
+        }
+    );
+
+
+    toggleCVV.addEventListener(
+        "click",
+        function() {
+
+            cvvVisible = !cvvVisible;
+
+
+            if (cvvVisible) {
+
+                cvvNumber.textContent =
+                    "427";
+
+                toggleCVV.textContent =
+                    "Hide";
+
+            } else {
+
+                cvvNumber.textContent =
+                    "•••";
+
+                toggleCVV.textContent =
+                    "Show";
+
+            }
+
+        }
+    );
+
+
+    document
+        .getElementById("cardActionButton")
+        .addEventListener(
+            "click",
+            function() {
+
+                showPopup(
+                    "Manage Card",
+                    "Card controls such as lock, unlock and replacement will be available in a future version of the demo.",
+                    "▣"
+                );
+
+            }
+        );
+
+
+    /* =========================================
+       NOTIFICATIONS
+    ========================================== */
+
+    document
+        .getElementById("notificationButton")
+        .addEventListener(
+            "click",
+            function() {
+
+                showPopup(
+                    "Notifications",
+                    "You have 3 new Horizon Credit notifications.",
+                    "●"
+                );
+
+            }
+        );
+
+
+    /* =========================================
+       MENU
+    ========================================== */
+
+    document
+        .getElementById("menuButton")
+        .addEventListener(
+            "click",
+            function() {
+
+                showPopup(
+                    "Menu",
+                    "Profile, security, settings and support options will appear here.",
+                    "☰"
+                );
+
+            }
+        );
+
+
+    /* =========================================
+       BOTTOM NAVIGATION
+    ========================================== */
+
+    document
+        .querySelectorAll(".nav-item")
+        .forEach(item => {
+
+            item.addEventListener(
+                "click",
+                function() {
+
+                    document
+                        .querySelectorAll(".nav-item")
+                        .forEach(nav => {
+
+                            nav.classList.remove(
+                                "active"
+                            );
+
+                        });
+
+
+                    this.classList.add("active");
+
+
+                    const destination =
+                        this.dataset.nav;
+
+
+                    if (
+                        destination !==
+                        "Accounts"
+                    ) {
+
+                        showPopup(
+                            destination,
+                            "This Horizon Credit feature is available in the demo.",
+                            "•"
+                        );
+
+                    }
+
+                }
+            );
+
+        });
+
+
+    /* =========================================
+       ESC KEY
+    ========================================== */
+
+    document.addEventListener(
+        "keydown",
+        function(event) {
+
+            if (event.key === "Escape") {
+
+                closePopup();
+                closeCardDetails();
+
+            }
+
+        }
+    );
+
+</script></body>
+</html>
