@@ -1,4 +1,4 @@
-const CACHE_NAME = "horizon-credit-v1";
+const CACHE_NAME = "horizon-credit-v2";
 
 const APP_SHELL = [
   "./",
@@ -7,13 +7,17 @@ const APP_SHELL = [
   "./style.css",
   "./script.js",
   "./manifest.json",
-  "./icon.svg"
+  "./icon.svg",
+  "./icon-192.png",
+  "./icon-512.png",
+  "./apple-touch-icon.png"
 ];
 
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(APP_SHELL))
   );
+
   self.skipWaiting();
 });
 
@@ -27,6 +31,7 @@ self.addEventListener("activate", event => {
       )
     )
   );
+
   self.clients.claim();
 });
 
@@ -35,19 +40,21 @@ self.addEventListener("fetch", event => {
 
   event.respondWith(
     caches.match(event.request).then(cached => {
-      return cached || fetch(event.request).then(response => {
-        if (!response || response.status !== 200) {
+      return cached || fetch(event.request)
+        .then(response => {
+          if (!response || response.status !== 200) {
+            return response;
+          }
+
+          const copy = response.clone();
+
+          caches.open(CACHE_NAME).then(cache => {
+            cache.put(event.request, copy);
+          });
+
           return response;
-        }
-
-        const copy = response.clone();
-
-        caches.open(CACHE_NAME).then(cache => {
-          cache.put(event.request, copy);
-        });
-
-        return response;
-      }).catch(() => caches.match("./index.html"));
+        })
+        .catch(() => caches.match("./index.html"));
     })
   );
 });
