@@ -1,5 +1,5 @@
 {
-  "name": "horizon-credit-app",
+  "name": "horizon-credit-",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
@@ -11,10 +11,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@capacitor/core": "^8.5.1",
-    "@capacitor/ios": "^8.5.1"
-  },
-  "devDependencies": {
-    "@capacitor/cli": "^8.5.1"
+    "@capacitor/core": "^8.5.1"
   }
 }
