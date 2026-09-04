@@ -16,6 +16,18 @@
 
 <link rel="stylesheet" href="style.css">
 
+<!-- Horizon Credit PWA -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+
+<meta name="theme-color" content="#b00020">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Horizon Credit">
+<meta name="format-detection" content="telephone=no">
+
 </head><body><main class="dashboard-screen"><!-- =========================================
      HEADER
 ========================================== -->
@@ -1440,5 +1452,16 @@
         }
     );
 
-</script></body>
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("Horizon Credit PWA ready"))
+      .catch(error => console.error("PWA service worker error:", error));
+  });
+}
+</script>
+
+</body>
 </html>
